@@ -1,0 +1,98 @@
+.pricing__container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.pricing__title {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.pricing__block {
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+.pricing__block-text {
+  font-size: 18px;
+  line-height: 32px;
+  color: #39393B;
+  text-align: center;
+  width: 604px;
+}
+
+.pricing__plans {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 32px;
+  margin-top: 72px;
+}
+
+.pricing__plan {
+  padding: 32px 40px;
+  width: 360px;
+}
+
+.pricing__plan--black {
+  background-color: #07070A;
+  color: #FFFFFF;
+}
+
+.pricing__plan--yellow {
+  background-color: #FAD007;
+  color: #39393B;
+}
+
+.pricing__plan-name {
+  font-size: 24px;
+  letter-spacing: -0.32px;
+}
+
+.pricing__plan-name--black {
+  color: #07070A;
+}
+
+.pricing__cost--black {
+  color: #07070A;
+}
+
+.pricing__cost {
+  font-size: 56px;
+  font-weight: 600;
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+.pricing__button {
+  text-align: center;
+  display: block;
+  width: 100%;
+  color: #07070A;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 16px 0px;
+  margin-bottom: 32px;
+}
+
+.pricing__button--yellow {
+  background-color: #FAD007;
+}
+
+.pricing__button--black {
+  background-color: #07070A;
+  color: #FFFCEE;
+}
+
+.plan__conditions {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.plan__condition-item {
+  display: flex;
+  column-gap: 7px;
+}

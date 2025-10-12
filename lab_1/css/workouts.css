@@ -1,0 +1,76 @@
+.workouts {
+  margin-top: 300px;
+}
+
+.workouts__container {
+  display: flex;
+  flex-wrap: nowrap;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+.workouts__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 780px;
+}
+
+.workouts__title {
+  font-weight: 600;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.workouts__title--big {
+  font-size: 80px;
+  width: 790px;
+  height: 323px;
+  margin-bottom: -50px;
+}
+
+.workouts__text {
+  font-weight: 500;
+  line-height: 1.1;
+  color: #616161;
+  margin: 0;
+}
+
+.workouts__text--medium {
+  font-size: 30px;
+  width: 600px;
+}
+
+.workouts__button {
+  padding: 4px 60px;
+  align-self: flex-start;
+  background-color: #fbbc05;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 27px;
+  font-weight: 600;
+  margin-top: 37px;
+  line-height: 1.1;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.workouts__button-text {
+  width: 200px;
+  display: inline-block;
+}
+
+.workouts__image {
+  position: absolute;
+  right: -156px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.workouts__image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}

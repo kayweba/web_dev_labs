@@ -1,0 +1,97 @@
+.header {
+  padding: 15px 24px;
+  border-bottom: 1px solid #e2e8f0;
+  /* display: flex; */
+  background-color: #fff;
+  width: 1440px !important;
+  margin: 0 auto;
+}
+
+.header__container {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  flex-grow: 0.5;
+  gap: 10px;
+}
+
+
+.header__logo-text--bold {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.header__nav {
+  flex-grow: 3;
+}
+
+.header__nav-list {
+  display: flex;
+  gap: 56px;
+}
+
+.header__nav-item {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.header__nav-link {
+  color: #0f172a;
+  position: relative;
+}
+
+.header__nav-link--with-chevron::after {
+  content: '';
+  position: absolute;
+  right: -32px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background-image: url(../assets/chevron.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header__action-content {
+  display: flex;
+  align-items: center;
+}
+
+.header__action-button--login {
+  color: #fbbc05;
+  margin-right: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: inherit;
+  font-weight: 600;
+}
+
+.header__action-button--login:hover {
+  color: #d39e01;
+  transition: all 0.2s linear;
+}
+
+.header__action-button--get-started {
+  padding: 12px 28px;
+  background-color: #fbbc05;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: inherit;
+  font-weight: 600;
+}
+
+.header__action-button--get-started:hover {
+  background-color: #d39e01;
+  transition: all 0.2s linear;
+}

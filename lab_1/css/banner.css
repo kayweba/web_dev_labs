@@ -1,0 +1,96 @@
+.banner__container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.banner__left-block {
+  display: flex;
+  flex-direction: column;
+  margin-top: 180px;
+}
+
+.banner__right-block {
+  margin-top: 180px;
+}
+
+.banner__center-block {
+  margin-top: 40px;
+  position: relative;
+}
+
+.banner__title--big {
+  font-size: 96px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.banner__title--medium {
+  font-size: 64px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.banner__text--small {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 500;
+  color: #39393b;
+  margin: 0;
+}
+
+.banner__left-block .banner__text--small {
+  width: 477px;
+  margin-top: 40px;
+}
+
+.banner__right-block .banner__text--small {
+  width: 245px;
+  margin-top: 20px;
+}
+
+.banner__actions {
+  margin-top: 40px;
+}
+
+.banner__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px 32px;
+  text-decoration: none;
+  max-width: 180px;
+}
+
+.banner__button--demo {
+  background-color: #fad007;
+  color: #07070a;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.banner__button-text {
+  margin: 0;
+}
+
+.banner__button-icon {
+  display: block;
+}
+
+.banner__blur {
+  position: absolute;
+  width: 580px;
+  height: 183px;
+  background-color: #fad007;
+  top: 333px;
+  left: 0;
+  transform: rotate(-49deg);
+  box-shadow: 45px 4px 71px 64px rgba(250, 208, 7, 0.2);
+  filter: blur(166px);
+  z-index: -1;
+}
+
+.banner__image {
+  display: block;
+}
