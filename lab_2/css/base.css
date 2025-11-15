@@ -1,0 +1,21 @@
+/* Сброс стилей и базовые настройки */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Базовые стили страницы */
+.page {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Общие стили для контейнеров */
+.header__container,
+.hero__container,
+.features__container,
+.download__container,
+.footer__container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
