@@ -14,6 +14,20 @@
   gap: 44px;
 }
 
+.footer__nav-list {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.footer__nav-link {
+    text-decoration: none;
+    color: #1C0E0D;
+    font-weight: 400;
+    transition: color 0.3s ease;
+    font-size: 18px;
+}
+
 .footer__divider {
   margin-top: 60px;
   margin-bottom: 40px;
@@ -39,6 +53,6 @@
   font-size: 18px;
 }
 
-.copywright {
+.copyright {
   margin-right: 24px;
 }

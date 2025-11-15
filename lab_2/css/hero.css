@@ -54,11 +54,11 @@
 }
 
 .hero__stats {
-    display: flex;
-    justify-content: center;
-    gap: 190px;
-    margin-top: 150px;
-    padding-bottom: 62px;
+  display: flex;
+  justify-content: center;
+  gap: 190px;
+  margin-top: 150px;
+  padding-bottom: 62px;
 }
 
 .hero__stat {

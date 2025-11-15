@@ -24,6 +24,14 @@
         <div class="header__logo">
           <img src="./assets/logo.svg" alt="logo" />
         </div>
+
+        <!-- Бургер-кнопка -->
+        <button class="header__burger header__burger--active" aria-label="Открыть меню">
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+        </button>
+
         <nav class="header__nav">
           <ul class="header__nav-list">
             <li class="header__nav-item">
@@ -39,6 +47,19 @@
               <a href="#contact" class="header__nav-link">Contact</a>
             </li>
           </ul>
+
+          <!-- Кнопки для мобильной версии -->
+          <div class="header__nav-actions">
+            <button class="header__btn header__btn--login">Login</button>
+            <button class="header__btn header__btn--signup">Sign up</button>
+          </div>
+          
+          <!-- Крестик для закрытия -->
+          <button class="header__close" aria-label="Закрыть меню">
+            <span class="header__close-line"></span>
+            <span class="header__close-line"></span>
+          </button>
+
         </nav>
         <div class="header__actions">
           <button class="header__btn header__btn--login">Login</button>
@@ -201,19 +222,19 @@
             <img src="assets/footer-logo.svg" alt="logo">
           </div>
           <div class="footer__links-block">
-            <nav class="header__nav">
-              <ul class="header__nav-list">
-                <li class="header__nav-item">
-                  <a href="#demos" class="header__nav-link">Demos</a>
+            <nav class="footer__nav">
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item">
+                  <a href="#demos" class="footer__nav-link">Demos</a>
                 </li>
-                <li class="header__nav-item">
-                  <a href="#features" class="header__nav-link">Features</a>
+                <li class="footer__nav-item">
+                  <a href="#features" class="footer__nav-link">Features</a>
                 </li>
-                <li class="header__nav-item">
-                  <a href="#pricing" class="header__nav-link">Pricing</a>
+                <li class="footer__nav-item">
+                  <a href="#pricing" class="footer__nav-link">Pricing</a>
                 </li>
-                <li class="header__nav-item">
-                  <a href="#contact" class="header__nav-link">Contact</a>
+                <li class="footer__nav-item">
+                  <a href="#contact" class="footer__nav-link">Contact</a>
                 </li>
               </ul>
             </nav>
@@ -239,11 +260,41 @@
             <a class="footer__other-info-link" href="#">Terms & condition</a>
             <a class="footer__other-info-link" href="#">Privacy policy</a>
           </div>
-          <div class="copywright">
+          <div class="copyright">
             All Right Reserved @ plowv.com
           </div>
         </div>
       </div>
     </footer>
   </body>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const burger = document.querySelector('.header__burger');
+      const closeBtn = document.querySelector('.header__close');
+      const nav = document.querySelector('.header__nav');
+      const navLinks = document.querySelectorAll('.header__nav-link');
+      
+      // Открытие меню
+      burger.addEventListener('click', function() {
+        burger.style.visibility = 'hidden'
+        nav.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      });
+      
+      // Закрытие меню
+      closeBtn.addEventListener('click', function() {
+        burger.style.visibility = 'visible'
+        nav.classList.remove('active');
+        document.body.style.overflow = '';
+      });
+      
+      // Закрытие меню при клике на ссылку
+      navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+          nav.classList.remove('active');
+          document.body.style.overflow = '';
+        });
+      });
+    });
+</script>
 </html>
