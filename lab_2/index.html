@@ -17,6 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <script src="js/index.js" defer></script>
   </head>
   <body class="page">
     <header class="header">
@@ -26,7 +27,7 @@
         </div>
 
         <!-- Бургер-кнопка -->
-        <button class="header__burger header__burger--active" aria-label="Открыть меню">
+        <button class="header__burger" aria-label="Открыть меню">
           <span class="header__burger-line"></span>
           <span class="header__burger-line"></span>
           <span class="header__burger-line"></span>
@@ -267,34 +268,4 @@
       </div>
     </footer>
   </body>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const burger = document.querySelector('.header__burger');
-      const closeBtn = document.querySelector('.header__close');
-      const nav = document.querySelector('.header__nav');
-      const navLinks = document.querySelectorAll('.header__nav-link');
-      
-      // Открытие меню
-      burger.addEventListener('click', function() {
-        burger.style.visibility = 'hidden'
-        nav.classList.add('active');
-        document.body.style.overflow = 'hidden';
-      });
-      
-      // Закрытие меню
-      closeBtn.addEventListener('click', function() {
-        burger.style.visibility = 'visible'
-        nav.classList.remove('active');
-        document.body.style.overflow = '';
-      });
-      
-      // Закрытие меню при клике на ссылку
-      navLinks.forEach(link => {
-        link.addEventListener('click', function() {
-          nav.classList.remove('active');
-          document.body.style.overflow = '';
-        });
-      });
-    });
-</script>
 </html>
