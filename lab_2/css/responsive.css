@@ -1,5 +1,5 @@
 /* Адаптивность */
-@media (max-width: 375px) {
+@media (max-width: 461px) {
   .header__container,
   .hero__container,
   .features__container,
@@ -87,12 +87,13 @@
     font-size: 28px;
     line-height: 160%;
     font-weight: 700;
-    width: 290px;
+    width: 390px;
     text-align: left;
   }
 
   .hero__main-content--subtitle {
-    width: 290px;
+    text-align: inherit;
+    width: 390px;
     font-size: 16px;
   }
 
